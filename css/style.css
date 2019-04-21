@@ -621,6 +621,7 @@ button:focus {
 .categories_post {
   position: relative;
   text-align: center;
+  margin-bottom: 10px;
   cursor: pointer; }
   .categories_post img {
     max-width: 100%; }

@@ -3,7 +3,7 @@
 
 	var nav_offset_top = $('header').height() + 50;
 	/*-------------------------------------------------------------------------------
-	  Navbar 
+	  Navbar
 	-------------------------------------------------------------------------------*/
 
 	//* Navbar Fixed
@@ -44,7 +44,7 @@
 			});
 		});
 
-		if (document.getElementById('portfolio')) {
+		if (document.getElementById('projects')) {
 			var $workGrid = $('.portfolio-grid').isotope({
 				itemSelector: '.all',
 				percentPosition: true,
@@ -53,6 +53,13 @@
 				}
 			});
 		}
+
+		/*----------------------------------------------------*/
+		/* Programmatically handle clicks on the navbar
+		/*----------------------------------------------------*/
+		$('.nav a').on('click', function(e){
+			$('.navbar-toggler').click(); //bootstrap 4.x
+		});
 	});
 
 	/*----------------------------------------------------*/

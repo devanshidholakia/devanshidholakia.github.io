@@ -1,0 +1,7 @@
+.hidden-section {
+    display: none;
+}
+
+.all, .latest, .popular, .upcoming {
+    margin-bottom: 10px;
+}
